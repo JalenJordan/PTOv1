@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          <title>PTO V1</title>
+     </head>
+     <body>
+          <!-- 1-4yrs = 5hrs per paychecheck -->
+          <!-- equal to or greater than 5yrs = 6hrs per paycheck -->
+          <!-- equal to or greater than 10 yrs = 7hrs per paycheck -->
+          <h1>PTO V1</h1>
+          <p>What this program main function is to obtain the paid time off of a 1 year span that is also on a fixed rate of 5 hours per paycheck bi weekly</p>
+          <ol>
+               <li>START</li>
+          </ol>
+          <form>
+               <input type="button" value="submit" onclick="biweekly()">
+               <span id="output"></span>
+          </form>
+     </body>
+     <script>
+          function biweekly(){
+               var paidWeeks = 26;
+               var ptoPerHour = 5;
+               var output = document.getElementById("output");
+
+               output.innerHTML = "Your total hours of pto in a year is " + paidWeeks * ptoPerHour + " hours of pto in a year."
+
+          }
+     </script>
+</html>
